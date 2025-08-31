@@ -42,7 +42,7 @@ const Header = () => {
           {/* 2. TRECHO ALTERADO ABAIXO */}
           <div className="flex items-center">
             <a href="#hero" onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }}>
-              <img src={logo2.jpeg} alt="Dayane Alves Logotipo" className="h-10 w-auto" />
+              <img src='logo2.jpeg' alt="Dayane Alves Logotipo" className="h-10 w-auto" />
             </a>
           </div>
 
