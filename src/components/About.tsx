@@ -1,4 +1,4 @@
-import dayaneProfile from "@/assets/dayane-profile.jpg";
+import dayaneProfile from "@/assets/logo.png";
 
 const About = () => {
   return (
