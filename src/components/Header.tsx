@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png"; // <-- 1. LOGO IMPORTADO AQUI
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,10 +39,11 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
+          {/* 2. TRECHO ALTERADO ABAIXO */}
           <div className="flex items-center">
-            <h1 className="font-display text-2xl md:text-3xl font-bold text-foreground">
-              Dayane Alves
-            </h1>
+            <a href="#hero" onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }}>
+              <img src={logo2.jpeg} alt="Dayane Alves Logotipo" className="h-10 w-auto" />
+            </a>
           </div>
 
           {/* Desktop Navigation */}
