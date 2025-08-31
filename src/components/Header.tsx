@@ -12,72 +12,84 @@ const Header = () => {
       setIsScrolled(window.scrollY > 50);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
       setIsMobileMenuOpen(false);
     }
   };
 
   const openWhatsApp = () => {
-    window.open('https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma consultoria.', '_blank');
+    window.open(
+      "https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma consultoria.",
+      "_blank"
+    );
   };
 
   return (
-    <header 
+    <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled 
-          ? 'bg-background/95 backdrop-blur-md shadow-elegant' 
-          : 'bg-transparent'
+        isScrolled
+          ? "bg-background/95 backdrop-blur-md shadow-elegant"
+          : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          {/* 2. TRECHO ALTERADO ABAIXO */}
           <div className="flex items-center">
-            <a href="#hero" onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }}>
-              <img src='logo2.jpeg' alt="Dayane Alves Logotipo" className="h-10 w-auto" />
+            <a
+              href="#hero"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("hero");
+              }}
+            >
+              <img
+                src={logo} // <-- corrigido aqui
+                alt="Dayane Alves Logotipo"
+                className="h-10 w-auto"
+              />
             </a>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <button 
-              onClick={() => scrollToSection('hero')}
+            <button
+              onClick={() => scrollToSection("hero")}
               className="font-body text-foreground hover:text-primary transition-all duration-300 relative group"
             >
               Início
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
             </button>
-            <button 
-              onClick={() => scrollToSection('about')}
+            <button
+              onClick={() => scrollToSection("about")}
               className="font-body text-foreground hover:text-primary transition-all duration-300 relative group"
             >
               Sobre
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
             </button>
-            <button 
-              onClick={() => scrollToSection('services')}
+            <button
+              onClick={() => scrollToSection("services")}
               className="font-body text-foreground hover:text-primary transition-all duration-300 relative group"
             >
               Serviços
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
             </button>
-            <button 
-              onClick={() => scrollToSection('portfolio')}
+            <button
+              onClick={() => scrollToSection("portfolio")}
               className="font-body text-foreground hover:text-primary transition-all duration-300 relative group"
             >
               Portfólio
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
             </button>
-            <button 
-              onClick={() => scrollToSection('contact')}
+            <button
+              onClick={() => scrollToSection("contact")}
               className="font-body text-foreground hover:text-primary transition-all duration-300 relative group"
             >
               Contato
@@ -87,8 +99,8 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button 
-              variant="cta" 
+            <Button
+              variant="cta"
               size="lg"
               onClick={openWhatsApp}
               className="animate-elegant-float"
@@ -110,38 +122,38 @@ const Header = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden absolute top-full left-0 right-0 bg-background/95 backdrop-blur-md border-t border-border shadow-elegant">
             <nav className="flex flex-col space-y-4 p-6">
-              <button 
-                onClick={() => scrollToSection('hero')}
+              <button
+                onClick={() => scrollToSection("hero")}
                 className="font-body text-foreground hover:text-primary transition-all duration-300 text-left"
               >
                 Início
               </button>
-              <button 
-                onClick={() => scrollToSection('about')}
+              <button
+                onClick={() => scrollToSection("about")}
                 className="font-body text-foreground hover:text-primary transition-all duration-300 text-left"
               >
                 Sobre
               </button>
-              <button 
-                onClick={() => scrollToSection('services')}
+              <button
+                onClick={() => scrollToSection("services")}
                 className="font-body text-foreground hover:text-primary transition-all duration-300 text-left"
               >
                 Serviços
               </button>
-              <button 
-                onClick={() => scrollToSection('portfolio')}
+              <button
+                onClick={() => scrollToSection("portfolio")}
                 className="font-body text-foreground hover:text-primary transition-all duration-300 text-left"
               >
                 Portfólio
               </button>
-              <button 
-                onClick={() => scrollToSection('contact')}
+              <button
+                onClick={() => scrollToSection("contact")}
                 className="font-body text-foreground hover:text-primary transition-all duration-300 text-left"
               >
                 Contato
               </button>
-              <Button 
-                variant="cta" 
+              <Button
+                variant="cta"
                 size="lg"
                 onClick={openWhatsApp}
                 className="mt-4"
