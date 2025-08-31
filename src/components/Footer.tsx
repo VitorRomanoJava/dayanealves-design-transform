@@ -11,7 +11,7 @@ const Footer = () => {
   };
 
   const openWhatsApp = () => {
-    window.open('https://wa.me/5511999999999?text=Olá! Gostaria de mais informações sobre seus serviços.', '_blank');
+    window.open('https://wa.me/5519992755050?text=Olá! Gostaria de mais informações sobre seus serviços.', '_blank');
   };
 
   const openInstagram = () => {
@@ -57,7 +57,7 @@ const Footer = () => {
                 <Phone size={16} className="text-primary mt-1 flex-shrink-0" />
                 <div>
                   <p className="font-body text-sm text-muted-foreground">
-                    (11) 99999-9999
+                    (19) 99275-5050
                   </p>
                   <p className="font-body text-xs text-muted-foreground/70">
                     WhatsApp disponível
@@ -67,13 +67,13 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <Mail size={16} className="text-primary mt-1 flex-shrink-0" />
                 <p className="font-body text-sm text-muted-foreground">
-                  contato@dayanealves.com.br
+                  dayanealvesdesigner44@gmail.com
                 </p>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin size={16} className="text-primary mt-1 flex-shrink-0" />
                 <p className="font-body text-sm text-muted-foreground">
-                  São Paulo, SP<br />
+                  Campinas, SP<br />
                   Atendimento em toda região metropolitana
                 </p>
               </div>

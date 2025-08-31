@@ -164,7 +164,7 @@ function initializeWhatsAppButtons() {
                 message = 'Olá! Vi seus projetos no portfólio e gostaria de saber mais sobre seus serviços.';
             }
             
-            const whatsappUrl = `https://wa.me/5511999999999?text=${encodeURIComponent(message)}`;
+            const whatsappUrl = `https://wa.me/5519992755050?text=${encodeURIComponent(message)}`;
             window.open(whatsappUrl, '_blank');
         });
     });
@@ -174,7 +174,7 @@ function initializeWhatsAppButtons() {
     if (portfolioCTABtn) {
         portfolioCTABtn.addEventListener('click', function() {
             const message = 'Olá! Gostaria de ver mais projetos do seu portfólio.';
-            const whatsappUrl = `https://wa.me/5511999999999?text=${encodeURIComponent(message)}`;
+            const whatsappUrl = `https://wa.me/5519992755050?text=${encodeURIComponent(message)}`;
             window.open(whatsappUrl, '_blank');
         });
     }
@@ -283,7 +283,7 @@ function handleContactForm() {
             
             // Create WhatsApp message
             const whatsappMessage = `Olá! Meu nome é ${name}. Email: ${email}. Mensagem: ${message}`;
-            const whatsappUrl = `https://wa.me/5511999999999?text=${encodeURIComponent(whatsappMessage)}`;
+            const whatsappUrl = `https://wa.me/5519992755050?text=${encodeURIComponent(whatsappMessage)}`;
             
             window.open(whatsappUrl, '_blank');
         });
