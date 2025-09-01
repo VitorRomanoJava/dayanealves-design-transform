@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
 import heroImage from "@/assets/dayane-profile.jpg";
+import logo from "@/assets/logo2.jpeg";
 
 const Hero = () => {
   const scrollToPortfolio = () => {
@@ -27,6 +28,15 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
+          {/* Logo */}
+          <div className="flex justify-center mb-8 animate-fade-in">
+            <img 
+              src={logo} 
+              alt="Dayane Alves Logo" 
+              className="h-24 md:h-32 lg:h-40 w-auto object-contain"
+            />
+          </div>
+          
           <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 animate-fade-in-up leading-tight">
             Designs e Interiores que
             <span className="text-primary block mt-2">
