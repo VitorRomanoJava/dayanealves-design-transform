@@ -28,7 +28,7 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 animate-fade-in-up leading-tight">
-            Designs de Interiores que 
+            Designs e Interiores que
             <span className="text-primary block mt-2">
               Transforma Espaços
             </span>
