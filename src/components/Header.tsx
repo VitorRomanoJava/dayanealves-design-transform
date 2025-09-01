@@ -53,7 +53,7 @@ const Header = () => {
               <img
                 src={logo} // <-- corrigido aqui
                 alt="Dayane Alves Logotipo"
-                className="h-10 w-auto"
+                className="h-20 w-auto"
               />
             </a>
           </div>
