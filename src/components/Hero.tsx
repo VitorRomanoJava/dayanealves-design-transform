@@ -22,11 +22,11 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
           {/* Logo */}
-          <div className="flex justify-center mb-8 animate-fade-in">
+          <div className="flex justify-center items-center mb-12 animate-fade-in">
             <img 
               src={logo} 
               alt="Dayane Alves Logo" 
-              className="h-32 md:h-40 lg:h-48 w-auto object-contain"
+              className="h-40 md:h-52 lg:h-64 xl:h-72 w-auto object-contain mx-auto"
             />
           </div>
           
