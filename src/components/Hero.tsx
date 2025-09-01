@@ -16,14 +16,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
-        <div className="absolute inset-0 bg-gradient-hero"></div>
-      </div>
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{ backgroundColor: '#f8f9f1' }}>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
@@ -33,7 +26,7 @@ const Hero = () => {
             <img 
               src={logo} 
               alt="Dayane Alves Logo" 
-              className="h-24 md:h-32 lg:h-40 w-auto object-contain"
+              className="h-32 md:h-40 lg:h-48 w-auto object-contain"
             />
           </div>
           
