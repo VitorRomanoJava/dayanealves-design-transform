@@ -24,7 +24,7 @@ const Process = () => {
       icon: CheckCircle,
       number: "04",
       title: "Execução e Entrega",
-      description: "Acompanhamento total da obra até a entrega do ambiente dos seus sonhos."
+      description: "Heleno Moura responsável técnico pela produção de desenvolvimento das peças e instalação!"
     }
   ];
 
